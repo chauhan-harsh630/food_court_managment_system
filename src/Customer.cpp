@@ -13,13 +13,15 @@ switch(choice){
     case 1: 
     viewMenu();
     break;
+    default:
+    cout<<"Invalid Choice\n";
 } 
 
-} while (choice > 2);
+} while (choice != 2);
 }
 
 void Customer::viewMenu(){
-    ifstream file("data/menu.txt");
+    ifstream file("data/menu.txt", ios::in);
     string item;
     int price;
     while (file>>item>>price)

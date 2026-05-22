@@ -20,13 +20,15 @@ void FoodStall::menu(){
             case 2:
             viewFoodItems();
             break;
+            default:
+            cout<<"Invalid Choice\n";
           }
-    }while(choice > 3);
+    }while(choice != 3);
 
 }
 
 void FoodStall::addFoodItem(){
-  ofstream file("data/menu.txt",ios::app);
+  ofstream file("data/menu.txt",ios::in);
   string item;
   int price;
   cout<<"Enter Food Name: ";
@@ -38,9 +40,9 @@ void FoodStall::addFoodItem(){
   cout<<"Food Added Successfully\n";
 }
 void FoodStall::viewFoodItems(){
-  ifstream file("data/menu.txt");
+  ifstream file("data/menu.txt", ios::in);
   string item;
-  float price;
+  int price;
   while(file>>item>>price){
     cout << item << " - Rs." << price << endl; 
   }

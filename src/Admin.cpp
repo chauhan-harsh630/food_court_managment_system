@@ -27,8 +27,10 @@ using namespace std;
             case 3:
             deleteStall();
             break;
+            default:
+            cout<<"Invalid Choice\n";
         }
-    }while(choice > 4);
+    }while(choice != 4);
  }
 
  void Admin::addStall(){
@@ -40,7 +42,7 @@ using namespace std;
     getline(cin, name);  // Read full line including spaces
     file<<name<<endl;
     file.close();
-    cout<<"Stall Added succssefully\n";
+    cout<<"Stall Added successfully\n";
  }
 
  void Admin::viewStalls(){

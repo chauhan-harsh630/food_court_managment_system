@@ -1,7 +1,8 @@
 #include<iostream>
 #include "include/Admin.h"
 #include "include/FoodStall.h"
-#include "include/Customer.h"   
+#include "include/Customer.h" 
+#include "include/FileHandler.h"  
 using namespace std;
 
 int main(){
@@ -13,7 +14,7 @@ int main(){
         cout<<"1. Admin Portal"<<endl;
         cout<<"2. Food Stall Portal"<<endl;
         cout<<"3. Customer Portal"<<endl;
-        cout<<"2. Exit"<<endl;
+        cout<<"4. Exit"<<endl;
         cout<<"Enter your choice: ";
         cin>>choice;
 
@@ -41,6 +42,6 @@ int main(){
             cout<<"Invalid Choice\n";
         }
 
-    }while (choice  > 5);
+    }while (choice != 4);
    return 0;
 }
