@@ -1,0 +1,79 @@
+# ============================================================
+#   .gitignore — Food Court Management System (C++)
+#   Author: the_cyberpath
+# ============================================================
+
+# ─── Compiled Binaries ───────────────────────────────────────
+*.exe
+*.out
+*.app
+*.bin
+main
+FoodCourtSystem
+
+# ─── Object & Intermediate Files ─────────────────────────────
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+
+# ─── Build Directories ───────────────────────────────────────
+build/
+bin/
+out/
+dist/
+
+# ─── Data Files (runtime generated) ─────────────────────────
+# Keep the data/ folder but ignore generated .txt files
+data/*.txt
+
+# ─── IDE & Editor ────────────────────────────────────────────
+# VS Code
+.vscode/
+*.code-workspace
+
+# Dev-C++ / Code::Blocks
+*.cbp
+*.layout
+*.depend
+*.dev
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.suo
+*.user
+*.aps
+*.ncb
+*.sdf
+ipch/
+
+# ─── OS Generated ────────────────────────────────────────────
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# ─── Logs & Temp ─────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+*.swp
+*.bak
